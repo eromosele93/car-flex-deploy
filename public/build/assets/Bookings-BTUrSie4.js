@@ -1,0 +1,1 @@
+import{_ as o}from"./Bookings.vue_vue_type_script_setup_true_lang-V1K9Bx4O.js";import"./Price.vue_vue_type_script_setup_true_lang-CNiJG1zG.js";import"./app-BAkr0Z21.js";import"./Rate.vue_vue_type_script_setup_true_lang-CESk7ZNz.js";import"./Box-C9FdZjTv.js";export{o as default};

@@ -1,0 +1,1 @@
+import{d as n,h as o,c as a,o as c,t as s}from"./app-BAkr0Z21.js";const u=n({__name:"Rate2",props:{rate:[Number,String]},setup(e){const t=e,r=o(()=>Number(t.rate).toLocaleString("en-US",{style:"currency",currency:"GBP",maximumFractionDigits:0}));return(i,m)=>(c(),a("div",null,s(r.value),1))}});export{u as _};

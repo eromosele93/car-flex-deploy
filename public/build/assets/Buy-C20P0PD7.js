@@ -1,0 +1,1 @@
+import{_ as o}from"./Buy.vue_vue_type_script_setup_true_lang-LsG1QEA7.js";import"./app-BAkr0Z21.js";import"./CarType.vue_vue_type_script_setup_true_lang-EL7Q3CFP.js";import"./Box-C9FdZjTv.js";import"./Price.vue_vue_type_script_setup_true_lang-CNiJG1zG.js";export{o as default};

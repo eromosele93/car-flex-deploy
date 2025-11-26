@@ -1,0 +1,1 @@
+import{B as t}from"./Box-C9FdZjTv.js";import{d as a,b as o,o as s,w as r,a as n,z as c}from"./app-BAkr0Z21.js";const l={class:"w-full text-center font-medium text-gray-500"},f=a({__name:"EmptyState",setup(_){return(e,m)=>(s(),o(t,null,{default:r(()=>[n("div",l,[c(e.$slots,"default")])]),_:3}))}});export{f as _};

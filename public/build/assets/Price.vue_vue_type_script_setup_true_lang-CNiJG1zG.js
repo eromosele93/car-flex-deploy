@@ -1,0 +1,1 @@
+import{d as c,h as o,c as n,o as s,t as a}from"./app-BAkr0Z21.js";const i={class:""},_=c({__name:"Price",props:{price:[Number,String]},setup(e){const t=e,r=o(()=>Number(t.price).toLocaleString("en-US",{style:"currency",currency:"GBP",maximumFractionDigits:0}));return(m,p)=>(s(),n("div",i,a(r.value),1))}});export{_};

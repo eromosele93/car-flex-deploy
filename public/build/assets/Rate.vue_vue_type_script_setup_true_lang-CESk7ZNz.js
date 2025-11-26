@@ -1,0 +1,1 @@
+import{d as a,h as n,c as o,o as c,t as s}from"./app-BAkr0Z21.js";const u=a({__name:"Rate",props:{rate:[Number,String]},setup(e){const t=e,r=n(()=>Number(t.rate).toLocaleString("en-US",{style:"currency",currency:"GBP",maximumFractionDigits:0}));return(i,m)=>(c(),o("div",null,s(r.value)+" / day",1))}});export{u as _};

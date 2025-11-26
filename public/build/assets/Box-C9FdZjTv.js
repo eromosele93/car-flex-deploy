@@ -1,0 +1,1 @@
+import{c,o as n,z as a}from"./app-BAkr0Z21.js";const d=(r,e)=>{const o=r.__vccOpts||r;for(const[t,s]of e)o[t]=s;return o},_={},l={class:"border border-purple-600 dark:border-gray-800 rounded-md p-4 shadow-sm dark:text-gray-300"};function p(r,e){return n(),c("div",l,[a(r.$slots,"default")])}const m=d(_,[["render",p]]);export{m as B};
