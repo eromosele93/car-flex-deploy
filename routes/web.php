@@ -38,18 +38,18 @@ Route::get('login', [AuthController::class, 'create'])->name('login');
 Route::post('signin', [AuthController::class, 'store'])->name('signin.store'); 
 Route::resource('user-account', UserAccount::class)->only(['create', 'store']);
 Route::delete('logout', [AuthController::class, 'destroy'])->name('logout');
-Route::resource('owner-buy', BuyListingController::class)->middleware(['auth', 'verified'])->withTrashed();
+Route::resource('owner-buy', BuyListingController::class)->middleware('auth')->withTrashed();
 Route::name('owner-buy.restore')->put('owner-buy/{owner_buy}/restore', [BuyListingController::class, 'restore'])->withTrashed()->middleware('auth');
-Route::resource('owner-rent', RentListingController::class)->middleware(['auth', 'verified'])->withTrashed();
+Route::resource('owner-rent', RentListingController::class)->middleware('auth')->withTrashed();
 Route::name('owner-rent.restore')->put('owner-rent/{owner_rent}/restore', [RentListingController::class, 'restore'])->withTrashed()->middleware('auth');
-Route::resource('buy.images', BuyImageController::class)->middleware(['auth', 'verified'])->only(['create', 'store', 'destroy']);
-Route::resource('rent.images', RentImageController::class)->middleware(['auth', 'verified'])->only(['create', 'store', 'destroy']);
-Route::resource('buy.offer', OfferController::class )->middleware(['auth', 'verified'])->only(['store']);
-Route::resource('rent.booking', BookingController::class )->middleware(['auth', 'verified'])->only(['store']);
-Route::resource('offers-made', OfferMadeController::class)->middleware(['auth', 'verified'])->only(['index', 'destroy']);
-Route::resource('bookings-made', BookingsMadeController::class)->middleware(['auth', 'verified'])->only(['index', 'update']);
-Route::resource('notifications', NotificationController::class)->middleware(['auth', 'verified'])->only(['index']);
-Route::put('notification/{notification}/seen', NotificationSeenController::class)->middleware(['auth', 'verified'])->name('notification.seen');
+Route::resource('buy.images', BuyImageController::class)->middleware('auth')->only(['create', 'store', 'destroy']);
+Route::resource('rent.images', RentImageController::class)->middleware('auth')->only(['create', 'store', 'destroy']);
+Route::resource('buy.offer', OfferController::class )->middleware('auth')->only(['store']);
+Route::resource('rent.booking', BookingController::class )->middleware('auth')->only(['store']);
+Route::resource('offers-made', OfferMadeController::class)->middleware('auth' )->only(['index', 'destroy']);
+Route::resource('bookings-made', BookingsMadeController::class)->middleware('auth')->only(['index', 'update']);
+Route::resource('notifications', NotificationController::class)->middleware('auth')->only(['index']);
+Route::put('notification/{notification}/seen', NotificationSeenController::class)->middleware('auth')->name('notification.seen');
 // Route::get('/email/verify', function(){
 
 // return inertia('auth/VerifyEmail');
