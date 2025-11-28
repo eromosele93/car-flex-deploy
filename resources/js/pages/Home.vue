@@ -2,7 +2,7 @@
 <template>
   <div class="border rounded-md bg-slate-100 p-6 md:p-12 mt-8">
     <p class="text-center text-xl md:text-2xl font-medium text-slate-700 mb-4">
-      UK' Largest Car Dealership
+      UK's Largest Car Dealership
     </p>
 
     <form
